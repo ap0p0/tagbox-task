@@ -1,0 +1,29 @@
+.inputBox {
+  width: 75%;
+  padding: 5px 10px 5px 20px;
+  border-radius: 100px;
+  font-size: 16px;
+  background-color: rgba(243, 243, 243, 0.75);
+  color: black;
+  font-weight: 400;
+}
+
+.suggestedList {
+  background-color: rgba(243, 243, 243, 0.95);
+  width: 70%;
+  padding: 0;
+  position: absolute;
+  z-index: 20000;
+  border-radius: 5px;
+}
+
+.suggestedItem {
+  list-style-type: none;
+  padding: 5px 0 5px 20px;
+  font-size: 16px;
+}
+.suggestedList :hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.imageContainer {
+  width: 336px;
+  height: 252px;
+  border-radius: 16px;
+  background-size: cover;
+  margin: 20px;
+  position: relative;
+}
+
+.itemsDisplay {
+  display: none;
+}
+.topLeftItem {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 2px solid #f4f2f0;
+  background: #ffffff80;
+  cursor: pointer;
+}
+
+.toprightItem {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #f4f2f0;
+}
+
+.topRightShow {
+  background-color: white;
+  display: none;
+  width: 120px;
+  text-align: left;
+  z-index: 100;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px;
+  position: relative;
+  bottom: 30px;
+  left: 32px;
+  margin: 0px;
+  padding: 0px;
+}
+.topRightShowItem {
+  padding: 10px 10px 10px 10px;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.toprightItem:hover .topRightShow {
+  display: block;
+}
+
+.bottomLeftItem {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 170px;
+  color: white;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+}
+
+.bottomRightItems {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 80px;
+}
+
+.itemYellow {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #fbc02d;
+  position: absolute;
+  bottom: 0px;
+  font-size: 24px;
+}
+.iconYellow {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.itemWhite {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #f4f2f0;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.iconWhite {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.imageContainer:hover .itemsDisplay {
+  display: block;
+}
+.imageContainer:hover {
+  background: rgba(0, 0, 0, 0.25);
+  background-blend-mode: darken;
+}
